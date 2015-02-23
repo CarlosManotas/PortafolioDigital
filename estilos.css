@@ -1,0 +1,62 @@
+body,html{
+	height: 100%;
+	margin: 0;
+	padding: 0:;
+}
+body{
+     font-family: sans-serif;
+     text-align: center;
+     background: -webkit-radial-gradient(
+                 #376888,
+                 #214154,
+                 #13242f
+     	        );
+     overflow: hidden;
+}
+.cuerpo,
+.manos{
+	width: 718px;
+	height: 911px;
+		/*centrado absoluto*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.mapa{
+    width: 300px;
+    height: 300px;
+    background: url(Imagenes/mapa.png);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: -40px -30px 0 0 rgba(0,0,0,.1) inset,
+                -70px -30px 0 0 rgba(0,0,0,.1) inset,          
+                    5px 5px 0 0 rgba(0,0,0,.2) inset;
+    position: absolute;
+	top: 15em;
+	right: 1.2em;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	-webkit-animation: tierra-girando 20s infinite linear;
+}
+@-webkit-keyframes tierra-girando{
+	from{
+		background-position: left center;
+	}
+	to{
+		background-position: -550px center;
+	}
+}
+.pie{
+	text-align: center;
+	color: #fff;
+	position: fixed;
+	top: 600px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
