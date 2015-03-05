@@ -6,6 +6,11 @@ body,html{
 body{
      font-family: sans-serif;
      text-align: center;
+     background: -ms-radial-gradient(
+                 #376888,
+                 #214154,
+                 #13242f
+     	        );
      background: -moz-radial-gradient(
                  #376888,
                  #214154,
@@ -47,7 +52,8 @@ body{
 	bottom: 0;
 	left: 0;
 	margin: auto;
-	-moz-animation:tierra-girando 20s infinite linear;
+	-ms-animation: tierra-girando 20s infinite linear;
+	-moz-animation: tierra-girando 20s infinite linear;
 	-webkit-animation: tierra-girando 20s infinite linear;
 }
 @-webkit-keyframes tierra-girando{
@@ -59,6 +65,14 @@ body{
 	}
 }
 @-moz-keyframes tierra-girando{
+	from{
+		background-position: left center;
+	}
+	to{
+		background-position: -550px center;
+	}
+}
+@-ms-keyframes tierra-girando{
 	from{
 		background-position: left center;
 	}
